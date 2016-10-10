@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://service.reportcheck.model.ngs.com/" targetNamespace="http://service.reportcheck.model.ngs.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="downloadPDFReport" type="tns:downloadPDFReport" />
+  <xs:element name="downloadPDFReportResponse" type="tns:downloadPDFReportResponse" />
+  <xs:element name="getColoredStonePearlResults" type="tns:getColoredStonePearlResults" />
+  <xs:element name="getColoredStonePearlResultsResponse" type="tns:getColoredStonePearlResultsResponse" />
+  <xs:element name="getReportCheckDateResult" type="tns:getReportCheckDateResult" />
+  <xs:element name="getReportCheckDateResultResponse" type="tns:getReportCheckDateResultResponse" />
+  <xs:element name="processRequest" type="tns:processRequest" />
+  <xs:element name="processRequest1" type="tns:processRequest1" />
+  <xs:element name="processRequest1Response" type="tns:processRequest1Response" />
+  <xs:element name="processRequestResponse" type="tns:processRequestResponse" />
+  <xs:complexType name="processRequest1">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="processRequest1Response">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="downloadPDFReport">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="downloadPDFReportResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getReportCheckDateResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getReportCheckDateResultResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getColoredStonePearlResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getColoredStonePearlResultsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="processRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="processRequestResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
